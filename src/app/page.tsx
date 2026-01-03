@@ -225,55 +225,53 @@ export default function Home() {
       {/* Full-Stack Development Section - IBM Grid */}
       <section className="py-16 bg-[#B8BEC3] border-b border-[#8d8d8d]">
         <div className="ibm-grid">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="mb-4">
-                <span className="inline-block px-3 py-1 bg-white text-[#525252] text-sm font-medium rounded-sm border border-[#d1d1d1]">
-                  FULL-STACK SOLUTIONS
-                </span>
+          <div className="col-span-12 lg:col-span-6">
+            <div className="mb-4">
+              <span className="inline-block px-3 py-1 bg-white text-[#525252] text-sm font-medium rounded-sm border border-[#8d8d8d]">
+                FULL-STACK SOLUTIONS
+              </span>
+            </div>
+            <h2 className="text-4xl font-light text-[#161616] mb-6">
+              Enterprise Full-Stack
+              <span className="font-semibold block mt-2">Development Services</span>
+            </h2>
+            <p className="text-lg text-[#525252] mb-8 leading-relaxed">
+              Transform your application with our expert full-stack development services. From responsive front-end interfaces to scalable back-end architectures, we bring your vision to life with quality code and attention to detail.
+            </p>
+            <div className="grid grid-cols-2 gap-6 mb-8">
+              <div className="bg-white border border-[#8d8d8d] p-4">
+                <div className="text-2xl font-semibold text-[#161616] mb-1">Performance</div>
+                <div className="text-sm text-[#525252]">Optimized solutions</div>
               </div>
-              <h2 className="text-4xl font-light text-[#161616] mb-6">
-                Enterprise Full-Stack
-                <span className="font-semibold block mt-2">Development Services</span>
-              </h2>
-              <p className="text-lg text-[#525252] mb-8 leading-relaxed">
-                Transform your application with our expert full-stack development services. From responsive front-end interfaces to scalable back-end architectures, we bring your vision to life with quality code and attention to detail.
-              </p>
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="bg-white border border-[#8d8d8d] p-4">
-                  <div className="text-2xl font-semibold text-[#161616] mb-1">Performance</div>
-                  <div className="text-sm text-[#525252]">Optimized solutions</div>
-                </div>
-                <div className="bg-white border border-[#8d8d8d] p-4">
-                  <div className="text-2xl font-semibold text-[#161616] mb-1">Monitoring</div>
-                  <div className="text-sm text-[#525252]">Real-time analytics</div>
-                </div>
-                <div className="bg-white border border-[#8d8d8d] p-4">
-                  <div className="text-2xl font-semibold text-[#161616] mb-1">Integration</div>
-                  <div className="text-sm text-[#525252]">API & third-party</div>
-                </div>
-                <div className="bg-white border border-[#8d8d8d] p-4">
-                  <div className="text-2xl font-semibold text-[#161616] mb-1">Deployment</div>
-                  <div className="text-sm text-[#525252]">Cloud & hosting</div>
-                </div>
+              <div className="bg-white border border-[#8d8d8d] p-4">
+                <div className="text-2xl font-semibold text-[#161616] mb-1">Monitoring</div>
+                <div className="text-sm text-[#525252]">Real-time analytics</div>
               </div>
-              <div className="flex gap-4">
-                <button
-                  onClick={() => setIsQuoteModalOpen(true)}
-                  className="px-6 py-3 bg-[#0f62fe] text-white font-medium hover:bg-[#0050e6] transition-colors border border-[#0f62fe]"
-                >
-                  Get Started
-                </button>
-                <Link
-                  href="/contractinginformation"
-                  className="px-6 py-3 bg-white text-[#161616] font-medium hover:bg-[#B8BEC3] transition-colors border border-[#8d8d8d]"
-                >
-                  Learn More
-                </Link>
+              <div className="bg-white border border-[#8d8d8d] p-4">
+                <div className="text-2xl font-semibold text-[#161616] mb-1">Integration</div>
+                <div className="text-sm text-[#525252]">API & third-party</div>
+              </div>
+              <div className="bg-white border border-[#8d8d8d] p-4">
+                <div className="text-2xl font-semibold text-[#161616] mb-1">Deployment</div>
+                <div className="text-sm text-[#525252]">Cloud & hosting</div>
               </div>
             </div>
+            <div className="flex gap-4">
+              <button
+                onClick={() => setIsQuoteModalOpen(true)}
+                className="px-6 py-3 bg-[#0f62fe] text-white font-medium hover:bg-[#0050e6] transition-colors border border-[#0f62fe]"
+              >
+                Get Started
+              </button>
+              <Link
+                href="/contractinginformation"
+                className="px-6 py-3 bg-white text-[#161616] font-medium hover:bg-[#B8BEC3] transition-colors border border-[#8d8d8d]"
+              >
+                Learn More
+              </Link>
+            </div>
           </div>
-          <div className="col-span-12 lg:col-span-6 lg:col-start-7 mt-8 lg:mt-0">
+          <div className="col-span-12 lg:col-span-6 mt-8 lg:mt-0">
             <div className="bg-white border border-[#8d8d8d] p-8">
               <div className="aspect-video bg-[#B8BEC3] border border-[#8d8d8d] flex items-center justify-center mb-6">
                 <img src="/скрипт.jpg" alt="Full-Stack Development" className="w-full h-full object-cover" />
@@ -339,6 +337,8 @@ export default function Home() {
                 Enterprise-grade security with end-to-end encryption, authentication, and compliance frameworks
               </p>
             </div>
+          </div>
+          <div className="col-span-12 md:col-span-4">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#0f62fe] flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -348,17 +348,6 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-[#161616] mb-2">High Performance</h3>
               <p className="text-[#525252]">
                 Optimized for speed and scalability to handle enterprise-level traffic and workloads
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#0f62fe] flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-[#161616] mb-2">24/7 Support</h3>
-              <p className="text-[#525252]">
-                Round-the-clock enterprise support with dedicated account managers and SLA guarantees
               </p>
             </div>
           </div>
@@ -383,25 +372,26 @@ export default function Home() {
         <div className="ibm-grid">
           <div className="col-span-12">
             <div className="bg-white border border-[#8d8d8d] p-12 text-center">
-            <h2 className="text-4xl font-light text-[#161616] mb-4">
-              Ready to Transform Your Application?
-            </h2>
-            <p className="text-lg text-[#525252] mb-8 max-w-2xl mx-auto">
-              Join enterprise clients who trust our development services for their mission-critical applications.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <button
-                onClick={() => setIsQuoteModalOpen(true)}
-                className="px-8 py-3 bg-[#0f62fe] text-white font-medium hover:bg-[#0050e6] transition-colors border border-[#0f62fe]"
-              >
-                Request Consultation
-              </button>
-              <button
-                onClick={() => setIsModalOpen(true)}
-                className="px-8 py-3 bg-white text-[#161616] font-medium hover:bg-[#B8BEC3] transition-colors border border-[#8d8d8d]"
-              >
-                Contact Our Team
-              </button>
+              <h2 className="text-4xl font-light text-[#161616] mb-4">
+                Ready to Transform Your Application?
+              </h2>
+              <p className="text-lg text-[#525252] mb-8 max-w-2xl mx-auto">
+                Join enterprise clients who trust our development services for their mission-critical applications.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <button
+                  onClick={() => setIsQuoteModalOpen(true)}
+                  className="px-8 py-3 bg-[#0f62fe] text-white font-medium hover:bg-[#0050e6] transition-colors border border-[#0f62fe]"
+                >
+                  Request Consultation
+                </button>
+                <button
+                  onClick={() => setIsModalOpen(true)}
+                  className="px-8 py-3 bg-white text-[#161616] font-medium hover:bg-[#B8BEC3] transition-colors border border-[#8d8d8d]"
+                >
+                  Contact Our Team
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -410,7 +400,7 @@ export default function Home() {
       {/* Contact Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={() => setIsModalOpen(false)}>
-          <div className="bg-white rounded-sm shadow-lg max-w-2xl w-full p-8 border border-[#d1d1d1]" onClick={(e) => e.stopPropagation()}>
+          <div className="bg-white rounded-sm shadow-lg max-w-2xl w-full p-8 border border-[#8d8d8d]" onClick={(e) => e.stopPropagation()}>
             <div className="flex justify-between items-center mb-6">
               <h3 className="text-2xl font-semibold text-[#161616]">Contact Us</h3>
               <button
