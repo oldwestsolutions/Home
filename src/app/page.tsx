@@ -478,15 +478,15 @@ export default function Home() {
         </div>
       )}
 
-      {/* Get Quote Modal */}
+      {/* Get Quote Modal - Windows Dark Theme */}
       {isQuoteModalOpen && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={() => setIsQuoteModalOpen(false)}>
-          <div className="bg-white rounded-sm shadow-lg max-w-2xl w-full p-8 border border-[#8d8d8d]" onClick={(e) => e.stopPropagation()}>
+        <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4" onClick={() => setIsQuoteModalOpen(false)}>
+          <div className="bg-[#252526] shadow-lg max-w-2xl w-full p-8 border border-[#3c3c3c]" onClick={(e) => e.stopPropagation()}>
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-2xl font-semibold text-[#161616]">Request a Quote</h3>
+              <h3 className="text-2xl font-semibold text-[#ffffff]">Request a Quote</h3>
               <button
                 onClick={() => setIsQuoteModalOpen(false)}
-                className="text-[#525252] hover:text-[#161616] transition-colors"
+                className="text-[#cccccc] hover:text-[#ffffff] transition-colors"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -495,7 +495,7 @@ export default function Home() {
             </div>
             <form onSubmit={handleQuoteSubmit} className="space-y-6">
               <div>
-                <label htmlFor="quote-name" className="block text-sm font-medium text-[#161616] mb-2">
+                <label htmlFor="quote-name" className="block text-sm font-medium text-[#ffffff] mb-2">
                   Full Name *
                 </label>
                 <input
@@ -505,13 +505,13 @@ export default function Home() {
                   value={quoteData.name}
                   onChange={handleQuoteChange}
                   required
-                  className="w-full px-4 py-2 bg-white border border-[#8d8d8d] text-[#161616] focus:outline-none focus:border-[#0f62fe] focus:ring-1 focus:ring-[#0f62fe]"
+                  className="w-full px-4 py-2 bg-[#1e1e1e] border border-[#3c3c3c] text-[#ffffff] focus:outline-none focus:border-[#0078d4] focus:ring-1 focus:ring-[#0078d4]"
                   placeholder="John Doe"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="quote-email" className="block text-sm font-medium text-[#161616] mb-2">
+                  <label htmlFor="quote-email" className="block text-sm font-medium text-[#ffffff] mb-2">
                     Email Address *
                   </label>
                   <input
@@ -521,12 +521,12 @@ export default function Home() {
                     value={quoteData.email}
                     onChange={handleQuoteChange}
                     required
-                    className="w-full px-4 py-2 bg-white border border-[#8d8d8d] text-[#161616] focus:outline-none focus:border-[#0f62fe] focus:ring-1 focus:ring-[#0f62fe]"
+                    className="w-full px-4 py-2 bg-[#1e1e1e] border border-[#3c3c3c] text-[#ffffff] focus:outline-none focus:border-[#0078d4] focus:ring-1 focus:ring-[#0078d4]"
                     placeholder="john@example.com"
                   />
                 </div>
                 <div>
-                  <label htmlFor="quote-phone" className="block text-sm font-medium text-[#161616] mb-2">
+                  <label htmlFor="quote-phone" className="block text-sm font-medium text-[#ffffff] mb-2">
                     Phone Number *
                   </label>
                   <input
@@ -536,13 +536,13 @@ export default function Home() {
                     value={quoteData.phone}
                     onChange={handleQuoteChange}
                     required
-                    className="w-full px-4 py-2 bg-white border border-[#8d8d8d] text-[#161616] focus:outline-none focus:border-[#0f62fe] focus:ring-1 focus:ring-[#0f62fe]"
+                    className="w-full px-4 py-2 bg-[#1e1e1e] border border-[#3c3c3c] text-[#ffffff] focus:outline-none focus:border-[#0078d4] focus:ring-1 focus:ring-[#0078d4]"
                     placeholder="(555) 123-4567"
                   />
                 </div>
               </div>
               <div>
-                <label htmlFor="quote-service" className="block text-sm font-medium text-[#161616] mb-2">
+                <label htmlFor="quote-service" className="block text-sm font-medium text-[#ffffff] mb-2">
                   Service Type *
                 </label>
                 <select
@@ -551,7 +551,7 @@ export default function Home() {
                   value={quoteData.serviceType}
                   onChange={handleQuoteChange}
                   required
-                  className="w-full px-4 py-2 bg-white border border-[#8d8d8d] text-[#161616] focus:outline-none focus:border-[#0f62fe] focus:ring-1 focus:ring-[#0f62fe]"
+                  className="w-full px-4 py-2 bg-[#1e1e1e] border border-[#3c3c3c] text-[#ffffff] focus:outline-none focus:border-[#0078d4] focus:ring-1 focus:ring-[#0078d4]"
                 >
                   <option value="">Select a service</option>
                   <option value="frontend">Front-end Development</option>
@@ -561,7 +561,7 @@ export default function Home() {
                 </select>
               </div>
               <div>
-                <label htmlFor="quote-details" className="block text-sm font-medium text-[#161616] mb-2">
+                <label htmlFor="quote-details" className="block text-sm font-medium text-[#ffffff] mb-2">
                   Project Details *
                 </label>
                 <textarea
@@ -571,21 +571,21 @@ export default function Home() {
                   onChange={handleQuoteChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-2 bg-white border border-[#8d8d8d] text-[#161616] focus:outline-none focus:border-[#0f62fe] focus:ring-1 focus:ring-[#0f62fe] resize-none"
+                  className="w-full px-4 py-2 bg-[#1e1e1e] border border-[#3c3c3c] text-[#ffffff] focus:outline-none focus:border-[#0078d4] focus:ring-1 focus:ring-[#0078d4] resize-none"
                   placeholder="Please describe your project, timeline, and any specific requirements..."
                 />
               </div>
               <div className="flex gap-4">
                 <button
                   type="submit"
-                  className="flex-1 px-6 py-3 bg-[#0f62fe] text-white font-medium hover:bg-[#0050e6] transition-colors border border-[#0f62fe]"
+                  className="flex-1 px-6 py-3 bg-[#0078d4] text-white font-medium hover:bg-[#106ebe] transition-colors border border-[#0078d4]"
                 >
                   Submit Quote Request
                 </button>
                 <button
                   type="button"
                   onClick={() => setIsQuoteModalOpen(false)}
-                  className="px-6 py-3 bg-white text-[#161616] font-medium hover:bg-[#f3f3f3] transition-colors border border-[#8d8d8d]"
+                  className="px-6 py-3 bg-[#252526] text-[#ffffff] font-medium hover:bg-[#2d2d30] transition-colors border border-[#3c3c3c]"
                 >
                   Cancel
                 </button>
