@@ -1,23 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: #B8BEC3; /* Microsoft Cloud Gray */
-  --foreground: #161616; /* IBM dark text */
-  --border: #8d8d8d; /* IBM gray border */
-  --accent: #0f62fe; /* IBM blue */
-  --grid-gutter: 1rem; /* IBM Carbon grid gutter */
-  --grid-padding-sm: 1rem; /* 16px for mobile */
-  --grid-padding-md: 1.5rem; /* 24px for desktop */
+  --background: #1e1e1e; /* Windows dark background */
+  --surface: #252526; /* Windows card background */
+  --surface-hover: #2d2d30; /* Windows hover state */
+  --border: #3c3c3c; /* Windows border */
+  --border-light: #464647; /* Windows light border */
+  --foreground: #ffffff; /* Windows text */
+  --foreground-secondary: #cccccc; /* Windows secondary text */
+  --accent: #0078d4; /* Windows blue */
+  --accent-hover: #106ebe; /* Windows blue hover */
+  --grid-gutter: 1rem;
+  --grid-padding-sm: 1rem;
+  --grid-padding-md: 1.5rem;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: "IBM Plex Mono", "Consolas", "Monaco", "Courier New", monospace;
+  --font-sans: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Cascadia Code", "Consolas", "Monaco", "Courier New", monospace;
 }
 
-/* IBM Carbon Grid System */
+/* IBM Carbon Grid System (keeping structure, Windows styling) */
 .ibm-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -44,7 +49,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
