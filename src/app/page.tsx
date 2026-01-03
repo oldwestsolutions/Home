@@ -140,21 +140,21 @@ export default function Home() {
           {/* Left Side - Visual Card */}
           <div className="relative">
             <div className="bg-[#2a2a2a] rounded-3xl shadow-2xl p-8 border border-orange-500/20">
-              <h2 className="text-3xl font-bold text-orange-400 mb-4" style={{fontFamily: 'Georgia, serif'}}>
-                Residential Contracting Services
+                <h2 className="text-3xl font-bold text-orange-400 mb-4" style={{fontFamily: 'Georgia, serif'}}>
+                Front-end & Back-end Services
               </h2>
               <p className="text-gray-400 mb-8 text-sm">
-                Comprehensive residential contracting services including roofing, HVAC, appliances, plumbing, and more with our verified contractor network
+                Comprehensive development services including front-end UI/UX, back-end APIs, database design, and security solutions with our verified developer network
               </p>
               
-              {/* House Image */}
+              {/* Code Image */}
               <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-2xl p-8 border border-orange-500/30 mb-8">
                 <div className="flex flex-col items-center">
                   <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden bg-[#1a1a1a] flex items-center justify-center">
-                    <img src="/house.jpg" alt="Maximum Protection" className="w-full h-full object-cover" />
+                    <img src="/скрипт.jpg" alt="Code Excellence" className="w-full h-full object-cover" />
                   </div>
-                  <p className="text-orange-400 font-semibold text-lg mb-2">Maximum Protection</p>
-                  <p className="text-gray-400 text-sm text-center">Weather-resistant materials and expert craftsmanship</p>
+                  <p className="text-orange-400 font-semibold text-lg mb-2">Code Excellence</p>
+                  <p className="text-gray-400 text-sm text-center">Modern frameworks and best practices</p>
                 </div>
               </div>
               
@@ -163,12 +163,12 @@ export default function Home() {
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">Expert Installation</p>
-                    <p className="text-gray-400 text-sm">Licensed professionals with verified credentials</p>
+                    <p className="text-white font-medium">Expert Development</p>
+                    <p className="text-gray-400 text-sm">Professional developers with verified credentials</p>
                   </div>
                 </div>
                 
@@ -179,8 +179,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">Verified Contractors</p>
-                    <p className="text-gray-400 text-sm">Background checked and insured professionals</p>
+                    <p className="text-white font-medium">Verified Developers</p>
+                    <p className="text-gray-400 text-sm">Background checked and certified professionals</p>
                   </div>
                 </div>
                 
@@ -191,8 +191,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">Quality Reviews</p>
-                    <p className="text-gray-400 text-sm">Rate your contractors and share experiences</p>
+                    <p className="text-white font-medium">Code Reviews</p>
+                    <p className="text-gray-400 text-sm">Rate your developers and share experiences</p>
                   </div>
                 </div>
               </div>
@@ -203,10 +203,10 @@ export default function Home() {
           <div className="space-y-8">
             <div>
               <h2 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{fontFamily: 'Georgia, serif'}}>
-                Residential Contracting Services
+                Front-end & Back-end Services
               </h2>
               <p className="text-xl text-gray-300 leading-relaxed mb-8">
-                Transform your home with our comprehensive residential contracting services. From expert roofing installations and HVAC systems to appliance services and plumbing solutions—we deliver excellence across every aspect of your home.
+                Transform your digital presence with our comprehensive development services. From expert front-end interfaces and user experience design to robust back-end APIs and database solutions—we deliver excellence across every aspect of your application.
               </p>
             </div>
             
@@ -214,42 +214,41 @@ export default function Home() {
               <Link href="/residential/roofing" className="bg-[#2a2a2a] rounded-xl p-6 border border-orange-500/20 hover:border-orange-500/50 transition-all transform hover:scale-105 cursor-pointer">
                 <div className="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <p className="text-white font-semibold mb-2">Roofing</p>
-                <p className="text-gray-400 text-sm">Expert installation</p>
+                <p className="text-white font-semibold mb-2">Front-end</p>
+                <p className="text-gray-400 text-sm">UI/UX development</p>
               </Link>
               
               <Link href="/residential/hvac" className="bg-[#2a2a2a] rounded-xl p-6 border border-orange-500/20 hover:border-orange-500/50 transition-all transform hover:scale-105 cursor-pointer">
                 <div className="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41-1.41m11.32-11.32l-1.41-1.41" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg>
                 </div>
-                <p className="text-white font-semibold mb-2">HVAC</p>
-                <p className="text-gray-400 text-sm">Heating & cooling</p>
+                <p className="text-white font-semibold mb-2">Back-end</p>
+                <p className="text-gray-400 text-sm">API & server development</p>
               </Link>
               
               <Link href="/residential/appliances" className="bg-[#2a2a2a] rounded-xl p-6 border border-orange-500/20 hover:border-orange-500/50 transition-all transform hover:scale-105 cursor-pointer">
                 <div className="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                   </svg>
                 </div>
-                <p className="text-white font-semibold mb-2">Appliances</p>
-                <p className="text-gray-400 text-sm">Installation & repair</p>
+                <p className="text-white font-semibold mb-2">Database</p>
+                <p className="text-gray-400 text-sm">Design & optimization</p>
               </Link>
               
               <Link href="/residential/plumbing" className="bg-[#2a2a2a] rounded-xl p-6 border border-orange-500/20 hover:border-orange-500/50 transition-all transform hover:scale-105 cursor-pointer">
                 <div className="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z" />
+                  <svg className="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
                 </div>
-                <p className="text-white font-semibold mb-2">Plumbing</p>
-                <p className="text-gray-400 text-sm">Complete solutions</p>
+                <p className="text-white font-semibold mb-2">Security</p>
+                <p className="text-gray-400 text-sm">Authentication & encryption</p>
               </Link>
             </div>
             
@@ -278,10 +277,10 @@ export default function Home() {
           <div className="space-y-8">
             <div>
               <h2 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{fontFamily: 'Georgia, serif'}}>
-                Remodeling Contracting Services
+                Full-Stack Development Services
               </h2>
               <p className="text-xl text-gray-300 leading-relaxed mb-8">
-                Transform your space with our expert remodeling contracting services. From kitchen and bathroom renovations to complete home makeovers, we bring your vision to life with quality craftsmanship and attention to detail.
+                Transform your application with our expert full-stack development services. From responsive front-end interfaces to scalable back-end architectures, we bring your vision to life with quality code and attention to detail.
               </p>
             </div>
             
@@ -292,8 +291,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <p className="text-white font-semibold mb-2">Energy</p>
-                <p className="text-gray-400 text-sm">Efficient solutions</p>
+                <p className="text-white font-semibold mb-2">Performance</p>
+                <p className="text-gray-400 text-sm">Optimized solutions</p>
               </Link>
               
               <Link href="/remodeling/monitoring" className="bg-[#2a2a2a] rounded-xl p-6 border border-yellow-500/20 hover:border-yellow-500/50 transition-all transform hover:scale-105 cursor-pointer">
@@ -302,8 +301,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
                 </div>
-                <p className="text-white font-semibold mb-2">Smart Monitoring</p>
-                <p className="text-gray-400 text-sm">Real-time tracking</p>
+                <p className="text-white font-semibold mb-2">Monitoring</p>
+                <p className="text-gray-400 text-sm">Real-time analytics</p>
               </Link>
               
               <Link href="/remodeling/finishing" className="bg-[#2a2a2a] rounded-xl p-6 border border-yellow-500/20 hover:border-yellow-500/50 transition-all transform hover:scale-105 cursor-pointer">
@@ -312,18 +311,18 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                   </svg>
                 </div>
-                <p className="text-white font-semibold mb-2">Finishing</p>
-                <p className="text-gray-400 text-sm">Interior & exterior</p>
+                <p className="text-white font-semibold mb-2">Integration</p>
+                <p className="text-gray-400 text-sm">API & third-party</p>
               </Link>
               
               <Link href="/remodeling/outdoor" className="bg-[#2a2a2a] rounded-xl p-6 border border-yellow-500/20 hover:border-yellow-500/50 transition-all transform hover:scale-105 cursor-pointer">
                 <div className="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <p className="text-white font-semibold mb-2">Outdoor</p>
-                <p className="text-gray-400 text-sm">Landscaping & more</p>
+                <p className="text-white font-semibold mb-2">Deployment</p>
+                <p className="text-gray-400 text-sm">Cloud & hosting</p>
               </Link>
             </div>
             
@@ -346,21 +345,21 @@ export default function Home() {
           {/* Right Side - Visual Card */}
           <div className="relative">
             <div className="bg-[#2a2a2a] rounded-3xl shadow-2xl p-8 border border-yellow-500/20">
-              <h2 className="text-3xl font-bold text-yellow-400 mb-4" style={{fontFamily: 'Georgia, serif'}}>
-                Remodeling Excellence
+                <h2 className="text-3xl font-bold text-yellow-400 mb-4" style={{fontFamily: 'Georgia, serif'}}>
+                Full-Stack Excellence
               </h2>
               <p className="text-gray-400 mb-8 text-sm">
-                Professional remodeling services with expert craftsmanship and premium materials for your home transformation
+                Professional full-stack development services with expert coding practices and modern technologies for your application transformation
               </p>
               
-              {/* Remodeling Image */}
+              {/* Code Image */}
               <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-2xl p-8 border border-yellow-500/30 mb-8">
                 <div className="flex flex-col items-center">
                   <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden bg-[#1a1a1a] flex items-center justify-center">
-                    <img src="/roomremodel.jpg" alt="Expert Craftsmanship" className="w-full h-full object-cover" />
+                    <img src="/скрипт.jpg" alt="Expert Development" className="w-full h-full object-cover" />
                   </div>
-                  <p className="text-yellow-400 font-semibold text-lg mb-2">Expert Craftsmanship</p>
-                  <p className="text-gray-400 text-sm text-center">Professional remodeling and renovation services</p>
+                  <p className="text-yellow-400 font-semibold text-lg mb-2">Expert Development</p>
+                  <p className="text-gray-400 text-sm text-center">Professional full-stack development services</p>
                 </div>
               </div>
               
@@ -373,8 +372,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">Verified Contractors</p>
-                    <p className="text-gray-400 text-sm">Licensed remodeling professionals</p>
+                    <p className="text-white font-medium">Verified Developers</p>
+                    <p className="text-gray-400 text-sm">Licensed full-stack professionals</p>
                   </div>
                 </div>
                 
@@ -398,7 +397,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-white font-medium">Project Reviews</p>
-                    <p className="text-gray-400 text-sm">Share your remodeling experience</p>
+                    <p className="text-gray-400 text-sm">Share your development experience</p>
                   </div>
                 </div>
               </div>
