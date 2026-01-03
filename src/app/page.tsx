@@ -51,13 +51,13 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f3f3f3] text-[#161616]" style={{fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'}}>
+    <div className="min-h-screen bg-[#B8BEC3] text-[#161616]" style={{fontFamily: '"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'}}>
       <Header />
 
-      {/* Enterprise Hero Section */}
-      <section className="bg-gradient-to-b from-[#ffffff] to-[#f3f3f3] border-b border-[#d1d1d1] pt-32 pb-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      {/* Enterprise Hero Section - IBM Grid */}
+      <section className="bg-gradient-to-b from-[#ffffff] to-[#B8BEC3] border-b border-[#8d8d8d] pt-32 pb-16">
+        <div className="ibm-grid">
+          <div className="col-span-12 lg:col-span-6 lg:col-start-1">
             <div>
               <div className="mb-6">
                 <span className="inline-block px-3 py-1 bg-[#e5e5e5] text-[#525252] text-sm font-medium rounded-sm">
@@ -100,8 +100,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="bg-white border border-[#d1d1d1] p-8 shadow-sm">
-              <div className="aspect-video bg-[#f3f3f3] border border-[#d1d1d1] flex items-center justify-center mb-6">
+          </div>
+          <div className="col-span-12 lg:col-span-6 lg:col-start-7 mt-8 lg:mt-0">
+            <div className="bg-white border border-[#8d8d8d] p-8 shadow-sm">
+              <div className="aspect-video bg-[#B8BEC3] border border-[#8d8d8d] flex items-center justify-center mb-6">
                 <img src="/скрипт.jpg" alt="Enterprise Development" className="w-full h-full object-cover" />
               </div>
               <div className="space-y-4">
@@ -144,17 +146,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Grid - Enterprise Style */}
-      <section className="py-16 bg-white border-b border-[#d1d1d1]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12">
+      {/* Services Grid - IBM Grid System */}
+      <section className="py-16 bg-white border-b border-[#8d8d8d]">
+        <div className="ibm-grid">
+          <div className="col-span-12 mb-12">
             <h2 className="text-4xl font-light text-[#161616] mb-4">Core Services</h2>
             <p className="text-lg text-[#525252] max-w-3xl">
               Comprehensive development services designed for enterprise-scale applications
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-[#f3f3f3] border border-[#d1d1d1] p-6 hover:border-[#8d8d8d] transition-colors">
+          <div className="col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="bg-[#B8BEC3] border border-[#8d8d8d] p-6 hover:border-[#525252] transition-colors h-full">
               <div className="w-12 h-12 bg-[#0f62fe] flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -168,8 +170,9 @@ export default function Home() {
                 Learn more →
               </Link>
             </div>
-
-            <div className="bg-[#f3f3f3] border border-[#d1d1d1] p-6 hover:border-[#8d8d8d] transition-colors">
+          </div>
+          <div className="col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="bg-[#B8BEC3] border border-[#8d8d8d] p-6 hover:border-[#525252] transition-colors h-full">
               <div className="w-12 h-12 bg-[#0f62fe] flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
@@ -183,8 +186,9 @@ export default function Home() {
                 Learn more →
               </Link>
             </div>
-
-            <div className="bg-[#f3f3f3] border border-[#d1d1d1] p-6 hover:border-[#8d8d8d] transition-colors">
+          </div>
+          <div className="col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="bg-[#B8BEC3] border border-[#8d8d8d] p-6 hover:border-[#525252] transition-colors h-full">
               <div className="w-12 h-12 bg-[#0f62fe] flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
@@ -198,8 +202,9 @@ export default function Home() {
                 Learn more →
               </Link>
             </div>
-
-            <div className="bg-[#f3f3f3] border border-[#d1d1d1] p-6 hover:border-[#8d8d8d] transition-colors">
+          </div>
+          <div className="col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="bg-[#B8BEC3] border border-[#8d8d8d] p-6 hover:border-[#525252] transition-colors h-full">
               <div className="w-12 h-12 bg-[#0f62fe] flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -217,9 +222,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Full-Stack Development Section */}
-      <section className="py-16 bg-[#f3f3f3] border-b border-[#d1d1d1]">
-        <div className="max-w-7xl mx-auto px-6">
+      {/* Full-Stack Development Section - IBM Grid */}
+      <section className="py-16 bg-[#B8BEC3] border-b border-[#8d8d8d]">
+        <div className="ibm-grid">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="mb-4">
@@ -235,19 +240,19 @@ export default function Home() {
                 Transform your application with our expert full-stack development services. From responsive front-end interfaces to scalable back-end architectures, we bring your vision to life with quality code and attention to detail.
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="bg-white border border-[#d1d1d1] p-4">
+                <div className="bg-white border border-[#8d8d8d] p-4">
                   <div className="text-2xl font-semibold text-[#161616] mb-1">Performance</div>
                   <div className="text-sm text-[#525252]">Optimized solutions</div>
                 </div>
-                <div className="bg-white border border-[#d1d1d1] p-4">
+                <div className="bg-white border border-[#8d8d8d] p-4">
                   <div className="text-2xl font-semibold text-[#161616] mb-1">Monitoring</div>
                   <div className="text-sm text-[#525252]">Real-time analytics</div>
                 </div>
-                <div className="bg-white border border-[#d1d1d1] p-4">
+                <div className="bg-white border border-[#8d8d8d] p-4">
                   <div className="text-2xl font-semibold text-[#161616] mb-1">Integration</div>
                   <div className="text-sm text-[#525252]">API & third-party</div>
                 </div>
-                <div className="bg-white border border-[#d1d1d1] p-4">
+                <div className="bg-white border border-[#8d8d8d] p-4">
                   <div className="text-2xl font-semibold text-[#161616] mb-1">Deployment</div>
                   <div className="text-sm text-[#525252]">Cloud & hosting</div>
                 </div>
@@ -261,14 +266,16 @@ export default function Home() {
                 </button>
                 <Link
                   href="/contractinginformation"
-                  className="px-6 py-3 bg-white text-[#161616] font-medium hover:bg-[#f3f3f3] transition-colors border border-[#8d8d8d]"
+                  className="px-6 py-3 bg-white text-[#161616] font-medium hover:bg-[#B8BEC3] transition-colors border border-[#8d8d8d]"
                 >
                   Learn More
                 </Link>
               </div>
             </div>
-            <div className="bg-white border border-[#d1d1d1] p-8">
-              <div className="aspect-video bg-[#f3f3f3] border border-[#d1d1d1] flex items-center justify-center mb-6">
+          </div>
+          <div className="col-span-12 lg:col-span-6 lg:col-start-7 mt-8 lg:mt-0">
+            <div className="bg-white border border-[#8d8d8d] p-8">
+              <div className="aspect-video bg-[#B8BEC3] border border-[#8d8d8d] flex items-center justify-center mb-6">
                 <img src="/скрипт.jpg" alt="Full-Stack Development" className="w-full h-full object-cover" />
               </div>
               <div className="space-y-4">
@@ -311,16 +318,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Enterprise Features Section */}
-      <section className="py-16 bg-white border-b border-[#d1d1d1]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-12 text-center">
+      {/* Enterprise Features Section - IBM Grid */}
+      <section className="py-16 bg-white border-b border-[#8d8d8d]">
+        <div className="ibm-grid">
+          <div className="col-span-12 mb-12 text-center">
             <h2 className="text-4xl font-light text-[#161616] mb-4">Enterprise Capabilities</h2>
             <p className="text-lg text-[#525252] max-w-3xl mx-auto">
               Built for scale, security, and reliability
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="col-span-12 md:col-span-4">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#0f62fe] flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -355,13 +362,27 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <div className="col-span-12 md:col-span-4">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-[#0f62fe] flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-[#161616] mb-2">24/7 Support</h3>
+              <p className="text-[#525252]">
+                Round-the-clock enterprise support with dedicated account managers and SLA guarantees
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-[#f3f3f3]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="bg-white border border-[#d1d1d1] p-12 text-center">
+      {/* CTA Section - IBM Grid */}
+      <section className="py-16 bg-[#B8BEC3]">
+        <div className="ibm-grid">
+          <div className="col-span-12">
+            <div className="bg-white border border-[#8d8d8d] p-12 text-center">
             <h2 className="text-4xl font-light text-[#161616] mb-4">
               Ready to Transform Your Application?
             </h2>
@@ -377,7 +398,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="px-8 py-3 bg-white text-[#161616] font-medium hover:bg-[#f3f3f3] transition-colors border border-[#8d8d8d]"
+                className="px-8 py-3 bg-white text-[#161616] font-medium hover:bg-[#B8BEC3] transition-colors border border-[#8d8d8d]"
               >
                 Contact Our Team
               </button>
@@ -457,7 +478,7 @@ export default function Home() {
                 <button
                   type="button"
                   onClick={() => setIsModalOpen(false)}
-                  className="px-6 py-3 bg-white text-[#161616] font-medium hover:bg-[#f3f3f3] transition-colors border border-[#8d8d8d]"
+                  className="px-6 py-3 bg-white text-[#161616] font-medium hover:bg-[#B8BEC3] transition-colors border border-[#8d8d8d]"
                 >
                   Cancel
                 </button>
@@ -470,7 +491,7 @@ export default function Home() {
       {/* Get Quote Modal */}
       {isQuoteModalOpen && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={() => setIsQuoteModalOpen(false)}>
-          <div className="bg-white rounded-sm shadow-lg max-w-2xl w-full p-8 border border-[#d1d1d1]" onClick={(e) => e.stopPropagation()}>
+          <div className="bg-white rounded-sm shadow-lg max-w-2xl w-full p-8 border border-[#8d8d8d]" onClick={(e) => e.stopPropagation()}>
             <div className="flex justify-between items-center mb-6">
               <h3 className="text-2xl font-semibold text-[#161616]">Request a Quote</h3>
               <button
@@ -584,52 +605,50 @@ export default function Home() {
         </div>
       )}
 
-      {/* Footer */}
-      <footer className="w-full bg-white text-[#525252] py-12 px-4 border-t border-[#d1d1d1]">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center gap-3 mb-4">
-                <img src="/bell.png" alt="OldWestSolutions Logo" className="w-8 h-8" />
-                <h3 className="text-[#161616] text-lg font-semibold">OldWestSolutions</h3>
-              </div>
-              <p className="text-sm mb-3">Enterprise development services for modern applications. Front-end, back-end, and full-stack solutions.</p>
-              <div className="flex items-center gap-2 text-sm">
-                <svg className="w-5 h-5 text-[#525252]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <span className="text-[#525252]">USA</span>
-              </div>
+      {/* Footer - IBM Grid */}
+      <footer className="w-full bg-white text-[#525252] py-12 border-t border-[#8d8d8d]">
+        <div className="ibm-grid">
+          <div className="col-span-12 md:col-span-3">
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/bell.png" alt="OldWestSolutions Logo" className="w-8 h-8" />
+              <h3 className="text-[#161616] text-lg font-semibold">OldWestSolutions</h3>
             </div>
-            <div>
-              <h4 className="text-[#161616] text-lg font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/residential" className="hover:text-[#161616] transition-colors">Front-end</Link></li>
-                <li><Link href="/remodeling" className="hover:text-[#161616] transition-colors">Back-end</Link></li>
-                <li><Link href="/repository" className="hover:text-[#161616] transition-colors">Full-Stack</Link></li>
-                <li><Link href="/network" className="hover:text-[#161616] transition-colors">Enterprise</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-[#161616] text-lg font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/newspaper" className="hover:text-[#161616] transition-colors">News</Link></li>
-                <li><Link href="/documents" className="hover:text-[#161616] transition-colors">Documents</Link></li>
-                <li><Link href="/domains" className="hover:text-[#161616] transition-colors">Domains</Link></li>
-                <li><Link href="/store" className="hover:text-[#161616] transition-colors">Store</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-[#161616] text-lg font-semibold mb-4">Support</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/help-desk" className="hover:text-[#161616] transition-colors">Help Desk</Link></li>
-                <li><Link href="/careers" className="hover:text-[#161616] transition-colors">Careers</Link></li>
-                <li><Link href="/legal" className="hover:text-[#161616] transition-colors">Legal</Link></li>
-              </ul>
+            <p className="text-sm mb-3">Enterprise development services for modern applications. Front-end, back-end, and full-stack solutions.</p>
+            <div className="flex items-center gap-2 text-sm">
+              <svg className="w-5 h-5 text-[#525252]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span className="text-[#525252]">USA</span>
             </div>
           </div>
-          <div className="border-t border-[#d1d1d1] mt-8 pt-8 text-center text-sm">
+          <div className="col-span-12 md:col-span-3">
+            <h4 className="text-[#161616] text-lg font-semibold mb-4">Services</h4>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/residential" className="hover:text-[#161616] transition-colors">Front-end</Link></li>
+              <li><Link href="/remodeling" className="hover:text-[#161616] transition-colors">Back-end</Link></li>
+              <li><Link href="/repository" className="hover:text-[#161616] transition-colors">Full-Stack</Link></li>
+              <li><Link href="/network" className="hover:text-[#161616] transition-colors">Enterprise</Link></li>
+            </ul>
+          </div>
+          <div className="col-span-12 md:col-span-3">
+            <h4 className="text-[#161616] text-lg font-semibold mb-4">Company</h4>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/newspaper" className="hover:text-[#161616] transition-colors">News</Link></li>
+              <li><Link href="/documents" className="hover:text-[#161616] transition-colors">Documents</Link></li>
+              <li><Link href="/domains" className="hover:text-[#161616] transition-colors">Domains</Link></li>
+              <li><Link href="/store" className="hover:text-[#161616] transition-colors">Store</Link></li>
+            </ul>
+          </div>
+          <div className="col-span-12 md:col-span-3">
+            <h4 className="text-[#161616] text-lg font-semibold mb-4">Support</h4>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/help-desk" className="hover:text-[#161616] transition-colors">Help Desk</Link></li>
+              <li><Link href="/careers" className="hover:text-[#161616] transition-colors">Careers</Link></li>
+              <li><Link href="/legal" className="hover:text-[#161616] transition-colors">Legal</Link></li>
+            </ul>
+          </div>
+          <div className="col-span-12 border-t border-[#8d8d8d] mt-8 pt-8 text-center text-sm">
             <div className="flex flex-wrap justify-center gap-4 mb-4">
               <Link href="/terms" className="hover:text-[#161616] transition-colors">Terms of Service</Link>
               <span>|</span>

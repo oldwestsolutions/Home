@@ -1,23 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f3f3f3; /* Windows gray background */
+  --background: #B8BEC3; /* Microsoft Cloud Gray */
   --foreground: #161616; /* IBM dark text */
-  --border: #d1d1d1; /* Windows gray border */
+  --border: #8d8d8d; /* IBM gray border */
   --accent: #0f62fe; /* IBM blue */
+  --grid-gutter: 1rem; /* IBM Carbon grid gutter */
+  --grid-padding-sm: 1rem; /* 16px for mobile */
+  --grid-padding-md: 1.5rem; /* 24px for desktop */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: "Consolas", "Monaco", "Courier New", monospace;
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "Consolas", "Monaco", "Courier New", monospace;
+}
+
+/* IBM Carbon Grid System */
+.ibm-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+  padding-left: var(--grid-padding-sm);
+  padding-right: var(--grid-padding-sm);
+}
+
+@media (min-width: 672px) {
+  .ibm-grid {
+    padding-left: var(--grid-padding-md);
+    padding-right: var(--grid-padding-md);
+  }
+}
+
+@media (min-width: 1056px) {
+  .ibm-grid {
+    max-width: 1584px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
